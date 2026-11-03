@@ -2,6 +2,7 @@ package com.example.port;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.World;
 import org.bukkit.block.Biome;
 import org.bukkit.generator.BiomeProvider;
 import org.bukkit.generator.ChunkGenerator;
@@ -26,8 +27,8 @@ public final class BlackWorldGenerator extends ChunkGenerator {
     }
 
     @Override
-    public Location getFixedSpawnLocation(WorldInfo info, Random random) {
-        return new Location(null, 0.5, FLOOR_Y + 1, 0.5);
+    public Location getFixedSpawnLocation(World world, Random random) {
+        return new Location(world, 0.5, FLOOR_Y + 1, 0.5);
     }
 
     @Override
