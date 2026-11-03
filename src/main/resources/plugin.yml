@@ -1,0 +1,19 @@
+name: PortPlugin
+version: 1.0.0
+main: com.example.port.PortPlugin
+api-version: '1.21'
+description: A wither rose that traps players in an endless black concrete room.
+commands:
+  port:
+    description: Give the Port rose or release a trapped player
+    usage: /port <give [player] | release <player>>
+permissions:
+  port.use:
+    description: Use the Port rose
+    default: true
+  port.give:
+    description: Give out Port roses
+    default: op
+  port.release:
+    description: Force-release trapped players
+    default: op
